@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Projetos — Bicho Carinhoso</title>
+  <meta name="description" content="Projetos sociais e oportunidades de voluntariado da ONG Bicho Carinhoso." />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="imagens/logo1.jpg" alt="Logo Bicho Carinhoso" class="logo" />
+        <h1 class="org-name">Bicho Carinhoso</h1>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <button id="btn-hamburger-2" class="hamburger" aria-expanded="false" aria-controls="nav-list" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-list-2" class="nav-list">
+          <li><a data-link href="index.html">Início</a></li>
+          <li class="has-submenu">
+            <a data-link href="projetos.html">Projetos</a>
+            <button class="submenu-toggle" aria-expanded="false" aria-label="Abrir submenu">▾</button>
+            <ul class="submenu">
+              <li><a data-link href="projetos.html#voluntariado">Voluntariado</a></li>
+              <li><a data-link href="projetos.html#doar">Doações</a></li>
+            </ul>
+          </li>
+          <li><a data-link href="cadastro.html">Cadastro</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main" tabindex="-1">
+    <section class="projects-intro">
+      <h2>Projetos Sociais</h2>
+      <p>Conheça alguns projetos em andamento e como participar.</p>
+    </section>
+
+    <section class="projects-grid" aria-label="Lista de projetos">
+      <div class="grid-3">
+        <article class="project-card card">
+          <div class="card-media">
+            <img src="imagens/image5.jpg" width="300">
+          </div>
+          <h3>Projeto Acolher</h3>
+          <p>Abrigo temporário e reabilitação para animais com necessidades médicas.</p>
+          <div class="card-meta">
+            <span class="badge">Saúde</span>
+            <span class="badge">Adoção</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn" data-action="volunteer" data-project="Acolher">Me voluntariar</button>
+            <button class="btn outline" data-action="donate" data-project="Acolher">Doar</button>
+          </div>
+        </article>
+
+        <article class="project-card card">
+          <div class="card-media">
+            <img src="imagens/image6.jpg" width="300">
+          </div>
+          <h3>Projeto Rua Segura</h3>
+          <p>Resgate de animais de rua com ações de castração e alimentação.</p>
+          <div class="card-meta">
+            <span class="badge">Resgate</span>
+            <span class="badge">Campo</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn" data-action="volunteer" data-project="Rua Segura">Me voluntariar</button>
+            <button class="btn outline" data-action="donate" data-project="Rua Segura">Doar</button>
+          </div>
+        </article>
+
+        <article class="project-card card">
+          <div class="card-media">
+            <img src="imagens/image7.jpg" width="300">
+          </div>
+          <h3>Projeto Educa</h3>
+          <p>Programa educativo para escolas sobre posse responsável.</p>
+          <div class="card-meta">
+            <span class="badge">Educação</span>
+            <span class="badge">Comunidade</span>
+          </div>
+          <div class="card-actions">
+            <button class="btn" data-action="volunteer" data-project="Educa">Me voluntariar</button>
+            <button class="btn outline" data-action="donate" data-project="Educa">Doar</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="voluntariado" class="volunteering">
+      <h3>Voluntariado</h3>
+      <p>Interessado em ajudar? Inscreva-se na página de cadastro para participar dos processos seletivos.</p>
+      <a class="btn primary" data-link href="cadastro.html">Ir para cadastro</a>
+    </section>
+
+    <section id="doar" class="donate">
+      <h3>Doações</h3>
+      <p>As doações ajudam a manter as campanhas, remédios e castrações. Em breve teremos integração com pagamentos online.</p>
+      <button class="btn outline" disabled title="Funcionalidade de doação futura">Doar agora (em breve)</button>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year-2"></span> Bicho Carinhoso — Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <div id="toast-2" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bicho Carinhoso — Início</title>
+  <meta name="description" content="Bicho Carinhoso — ONG dedicada ao bem-estar animal" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Ir para o conteúdo</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="imagens/logo1.jpg" alt="Logo Bicho Carinhoso" class="logo" />
+        <h1 class="org-name">Bicho Carinhoso</h1>
+      </div>
+
+      <nav class="main-nav" role="navigation" aria-label="Menu principal">
+        <button id="btn-hamburger" class="hamburger" aria-expanded="false" aria-controls="nav-list" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul id="nav-list" class="nav-list">
+          <li><a data-link href="index.html">Início</a></li>
+          <li class="has-submenu">
+            <a href="projetos.html" data-link>Projetos</a>
+            <button class="submenu-toggle" aria-expanded="false" aria-label="Abrir submenu">▾</button>
+            <ul class="submenu">
+              <li><a data-link href="projetos.html#voluntariado">Voluntariado</a></li>
+              <li><a data-link href="projetos.html#doar">Doações</a></li>
+            </ul>
+          </li>
+          <li><a data-link href="cadastro.html">Cadastro</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main" tabindex="-1">
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h2>Amor e cuidado para nossos amigos de 4 patas</h2>
+          <p>Promovemos resgates, abrigo temporário, reabilitação e adoção responsável. Junte-se a nós como voluntário ou apoiador.</p>
+          <div class="cta-row">
+            <a class="btn primary" data-link href="projetos.html">Ver projetos</a>
+            <a class="btn outline" data-link href="cadastro.html">Se inscrever</a>
+          </div>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+          <img src="imagens/image1.jpg" alt="Pessoas brincando com animais" width="500" height="300">
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <h3>Nossas Atividades</h3>
+      <div class="cards grid-3">
+        <article class="card">
+          <div class="card-media">
+            <img src="imagens/image2.jpg" alt="Voluntarios com animais" width="300"> 
+          <h4>Resgates</h4>
+          <p>Resgatamos animais em situação de risco e providenciamos cuidados veterinários.</p>
+        </article>
+        <article class="card">
+          <div class="card-media">
+            <img src="imagens/image3.jpg" alt="Garota com gato" width="300">
+          </div>
+          <h4>Adoções</h4>
+          <p>Processo cuidadoso para garantir um lar seguro e responsável.</p>
+        </article>
+        <article class="card">
+          <div class="card-media">
+            <img src="imagens/image4.jpg" alt="Casal com cão" width="300" height="200">
+          </div>
+          <h4>Voluntariado</h4>
+          <p>Oportunidades em abrigo, eventos e apoio à reabilitação.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="contact">
+      <h3>Contato</h3>
+      <p>Email: contato@bichocarinhoso.org.br</p>
+      <p>Telefone: (00) 99999-9999</p>
+      <p>Endereço: Rua das Flores, 123 — Rio de Janeiro</p>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Bicho Carinhoso — Todos os direitos reservados.</p>
+      <div class="socials" aria-hidden="true">
+        <span class="badge">Transparência</span>
+        <span class="badge">Relatórios</span>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>
